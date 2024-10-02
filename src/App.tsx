@@ -77,7 +77,24 @@ const Next = () => {
 return (
   <>
     <div className="bg-[url('https://i.etsystatic.com/38660474/r/il/12429e/4352455753/il_fullxfull.4352455753_jinn.jpg')] bg-cover bg-center fixed inset-0 flex flex-col justify-center items-center text-center min-h-screen">
-        
+    <div className="flex flex-col justify-center items-center">
+            <h1>
+              Islamic Prophets Trivia
+            </h1>
+            <h4>How good is your knoledge on the prophets?</h4>
+            <h4 >Number of Flashcards: 10</h4>
+            <Card
+              id={Prophets[count].id.toString()}
+              question={Prophets[count].question}
+              answer={Prophets[count].answer}
+              flipped={flip}
+              setFlip={setFlip}
+            />
+            <div className="mt-10 space-x-4">
+              <button onClick={Back} className="px-4 py-2 bg-blue-500 text-white rounded">Back</button>
+              <button onClick={Next} className="px-4 py-2 bg-blue-500 text-white rounded">Next</button>
+            </div>
+        </div>
     </div>
   </>
 )
