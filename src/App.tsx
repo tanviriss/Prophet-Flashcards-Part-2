@@ -77,12 +77,12 @@ const Next = () => {
 return (
   <>
     <div className="bg-[url('https://i.etsystatic.com/38660474/r/il/12429e/4352455753/il_fullxfull.4352455753_jinn.jpg')] bg-cover bg-center fixed inset-0 flex flex-col justify-center items-center text-center min-h-screen">
-    <div className="flex flex-col justify-center items-center">
-            <h1>
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold font-serif mb-10">
               Islamic Prophets Trivia
             </h1>
-            <h4>How good is your knoledge on the prophets?</h4>
-            <h4 >Number of Flashcards: 10</h4>
+            <h4 className="text-white mb-6">How good is your knoledge on the prophets?</h4>
+            <h4 className="text-white mb-6">Number of Flashcards: 10</h4>
             <Card
               id={Prophets[count].id.toString()}
               question={Prophets[count].question}
