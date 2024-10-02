@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
   const [flip, setFlip] = useState(false);
   
 
@@ -76,13 +76,13 @@ const Next = () => {
 
 return (
   <>
-    <div className="bg-[url('https://i.etsystatic.com/38660474/r/il/12429e/4352455753/il_fullxfull.4352455753_jinn.jpg')] bg-cover bg-center fixed inset-0 flex flex-col justify-center items-center text-center min-h-screen">
+    <div className="bg-[url('https://images.alphacoders.com/841/84113.jpg')] bg-cover bg-center fixed inset-0 flex flex-col justify-center items-center text-center min-h-screen">
         <div className="flex flex-col justify-center items-center">
-            <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold font-serif mb-10">
+            <h1 className="text-4xl md:text-6xl lg:text-8xl text-red-400 font-bold font-serif mb-10">
               Islamic Prophets Trivia
             </h1>
-            <h4 className="text-white mb-6">How good is your knoledge on the prophets?</h4>
-            <h4 className="text-white mb-6">Number of Flashcards: 10</h4>
+            <h1 className="text-white mb-6 text-3xl">How good is your knoledge on the prophets?</h1>
+            <h1 className="text-white mb-6 text-2xl">Number of Flashcards: 10</h1>
             <Card
               id={Prophets[count].id.toString()}
               question={Prophets[count].question}
@@ -91,8 +91,8 @@ return (
               setFlip={setFlip}
             />
             <div className="mt-10 space-x-4">
-              <button onClick={Back} className="px-4 py-2 bg-blue-500 text-white rounded">Back</button>
-              <button onClick={Next} className="px-4 py-2 bg-blue-500 text-white rounded">Next</button>
+              <button onClick={Back} className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Back</button>
+              <button onClick={Next} className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Next</button>
             </div>
         </div>
     </div>
