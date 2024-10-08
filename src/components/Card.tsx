@@ -11,6 +11,7 @@ interface CardProps {
 const Card = (props: CardProps) => {
   const [guess, setGuess] = useState('');
   const [feedback, setFeedback] = useState('');
+  const [inputColor, setInputColor] = useState('border');
 
   const flip = () => {
     props.setFlip(!props.flipped);
@@ -23,8 +24,10 @@ const Card = (props: CardProps) => {
   const handleSubmit = () => {
     if (guess.toLowerCase() === props.answer.toLowerCase()) {
       setFeedback('Correct!');
+      setInputColor('border-green-500');
     } else {
       setFeedback('Incorrect!');
+      setInputColor('border-red-500');
     }
   }
 
@@ -34,7 +37,7 @@ const Card = (props: CardProps) => {
         className="flex flex-col items-center justify-center bg-gray-500 border rounded-lg shadow-lg p-10 w-full max-w-2xl h-80 cursor-pointer transition-transform transform hover:scale-105" 
         onClick={flip}
       >
-        <p className="font-bold font-serif text-4xl text-blue-300 mb-4">{props.id}</p>
+        <p className="font-bold font-serif text-4xl text-pink-500 mb-4">{props.id}</p>
         {props.flipped ? (
           <p className="text-2xl text-center font-serif">{props.answer}</p>
         ) : (
@@ -47,7 +50,7 @@ const Card = (props: CardProps) => {
             type="text" 
             value={guess} 
             onChange={handleGuessChange} 
-            className="border rounded p-2 w-full"
+            className={`border rounded p-2 w-full ${inputColor}`}
             placeholder="Enter your guess"
           />
           <button 
