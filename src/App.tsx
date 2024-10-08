@@ -11,52 +11,52 @@ function App() {
     { 
       id: 1,
       question: "Which prophet is known for his steadfastness and patience during trials and tribulations?", 
-      answer: "Ayyub (Job)" 
+      answer: "Ayyub"
     },
     { 
       id: 2, 
       question: "Who is the prophet known for building the Kaaba in Mecca?", 
-      answer: "Ibrahim (Abraham)" 
+      answer: "Ibrahim"
     },
     { 
       id: 3, 
       question: "Which prophet was known for his wisdom and ruled over the Israelites?", 
-      answer: "Dawud (David)" 
+      answer: "Dawud"
     },
     { 
       id: 4, 
       question: "Who is the prophet that led the Children of Israel out of Egypt?", 
-      answer: "Musa (Moses)" 
+      answer: "Musa"
     },
     { 
       id: 5, 
       question: "Which prophet is associated with the story of the Ark and the Great Flood?", 
-      answer: "Nuh (Noah)" 
+      answer: "Nuh"
     },
     { 
       id: 6, 
       question: "Who is the prophet known for his miraculous birth and ability to speak in the cradle?", 
-      answer: "Isa (Jesus)" 
+      answer: "Isa"
     },
     { 
       id: 7, 
       question: "Which prophet was swallowed by a big fish or whale and repented while inside?", 
-      answer: "Yunus (Jonah)" 
+      answer: "Yunus" 
     },
     { 
       id: 8, 
       question: "Who is considered the final prophet in Islam, known as the Seal of the Prophets?", 
-      answer: "Muhammad" 
+      answer: "Muhammad(SAW)" 
     },
     { 
       id: 9, 
       question: "Which prophet is known for receiving the Psalms (Zabur)?", 
-      answer: "Dawud (David)" 
+      answer: "Dawud"
     },
     { 
       id: 10, 
       question: "Who is the prophet known for his eloquent speeches and receiving the scriptures (Injil)?", 
-      answer: "Isa (Jesus)" 
+      answer: "Isa"
     }
 ];
 
